@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script>
+	window.onload=function(){
+		var _span=document.getElementsByTagName('span');
+		var CBody=document.getElementsByTagName('body')[0];
+		_span[0].onclick=function(){
+			CBody.style.background="#CCE8CF";
+		}
+		_span[1].onclick=function(){
+			CBody.style.background="#FFFFE1";
+		}
+		_span[2].onclick=function(){
+			CBody.style.background="#FFFFFF";
+		}
+	}
+</script>
+</head>
+
+<body>
+	<span style="margin-left:5px;cursor:pointer;border:1px solid #b4b4b4;color:#CCE8CF;background-color:#CCE8CF" title="最养眼的淡绿色"">__</span>
+	<span style="margin-left:5px;cursor:pointer;border:1px solid #b4b4b4;color:#FFFFE1;background-color:#FFFFE1" title="清新的淡黄色"">__</span>
+	<span style="margin-left:5px;cursor:pointer;border:1px solid #b4b4b4;color:#FFFFFF;background-color:#FFFFFF" title="默认白色背景"">__</span>
+</body>
+</html>

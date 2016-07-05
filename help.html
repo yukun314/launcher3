@@ -12,12 +12,15 @@
 			background-color:rgba(0,0,0,0);
 		}
 		.panel_title_color{
-			background-color:rgba(55,66,77,0.5);
+			background-color:rgba(55,66,77,0.6);
 		}
 		.panel_title_text{
 			padding:20px 20px 20px 20px;
 			color:#C4C4C4;
-			font-size:24px;
+			font-size:22px;
+		}
+		a:link,a:visited{
+			text-decoration:none;  /*超链接无下划线*/
 		}
    </style>
 </head>
@@ -30,13 +33,13 @@
 </div>
 <div class="panel-group" id="accordion">
    
-   <div class="panel panel-warning">
+   <div class="panel panel-warning change">
       <div class="panel-heading">
          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" 
+            <b data-toggle="collapse" data-parent="#accordion" 
                href="#collapseFour">
                点击我进行展开，再次点击我进行折叠。第 4 部分--options 方法
-            </a>
+            </b>
          </h4>
       </div>
       <div id="collapseFour" class="panel-collapse collapse">
@@ -53,6 +56,9 @@
       toggle: false
    })});
    
+   $(function () {
+	$("b").click(function () { $(this).css("background", "red");  });
+});
  
 </script>  
 
