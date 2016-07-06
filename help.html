@@ -68,18 +68,18 @@
    
    $(function () {
    $(".setbg").mousedown(function () {
-		$(this).css("background", "rgba(120,186,222,0.7)");  
+		$(this).css("background", "rgba(120,186,222,0.5)");  
 		
 	});
 
 	$(".setbg").click(function () { 
 		if($(this).attr("data-selected")==1){
-			$(this).css("background", "rgba(38,50,56,0.7)");  
-			$(this).next().css("background", "rgba(38,50,56,0.7)");
+			$(this).css("background", "rgba(38,50,56,0.5)");  
+			$(this).next().css("background", "rgba(38,50,56,0.5)");
 			$(this).attr("data-selected",2);
 		}else{
-			$(this).css("background", "rgba(88,115,129,0.7)");  
-			$(this).next().css("background", "rgba(88,115,129,0.7)");
+			$(this).css("background", "rgba(88,115,129,0.5)");  
+			$(this).next().css("background", "rgba(88,115,129,0.5)");
 			$(this).attr("data-selected",1);
 		}
 		
