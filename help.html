@@ -34,7 +34,7 @@
 <div class="panel-group" id="accordion">
    
    <div class="panel panel-warning change">
-      <div class="panel-heading">
+      <div class="panel-heading setbg" data-selected=1>
          <h4 class="panel-title">
             <b data-toggle="collapse" data-parent="#accordion" 
                href="#collapseFour">
@@ -57,7 +57,24 @@
    })});
    
    $(function () {
-	$("b").click(function () { $(this).css("background", "red");  });
+   $(".setbg").mousedown(function () {
+		$(this).css("background", "#99ccff");  
+		
+	});
+
+	$(".setbg").click(function () { 
+		if($(this).attr("data-selected")==1){
+			$(this).css("background", "red");  
+			$(this).next().css("background", "red");
+			$(this).attr("data-selected",2);
+		}else{
+			$(this).css("background", "yellow");  
+			$(this).next().css("background", "yellow");
+			$(this).attr("data-selected",1);
+		}
+		
+	});
+	
 });
  
 </script>  
