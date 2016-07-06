@@ -12,7 +12,7 @@
 			background-color:rgba(0,0,0,0);
 		}
 		.panel_title_color{
-			background-color:rgba(55,66,77,0.6);
+			background-color:rgba(55,66,77,0.7);
 		}
 		.panel_title_text{
 			padding:20px 20px 20px 20px;
@@ -21,7 +21,19 @@
 		}
 		a:link,a:visited{
 			text-decoration:none;  /*超链接无下划线*/
+			color:#C4C4C4;
+			font-size:18px;
 		}
+		.text_color{
+			color:#C4C4C4;
+		}
+		.text_color:visited{
+			color:#C4C4C4;
+		}
+		.text_color:hover{
+			color:#C4C4C4;
+		}
+		
    </style>
 </head>
 <body class="body_bg">
@@ -36,17 +48,15 @@
    <div class="panel panel-warning change">
       <div class="panel-heading setbg" data-selected=1>
          <h4 class="panel-title">
-            <b data-toggle="collapse" data-parent="#accordion" 
-               href="#collapseFour">
-               点击我进行展开，再次点击我进行折叠。第 4 部分--options 方法
-            </b>
+            <a class="text_color" data-toggle="collapse" data-parent="#accordion" 
+               href="#collapseFour" >
+               设置默认桌面不能成功问题？
+            </a>
          </h4>
       </div>
       <div id="collapseFour" class="panel-collapse collapse">
          <div class="panel-body">
-            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred 
-            nesciunt sapiente ea proident. Ad vegan excepteur butcher vice 
-            lomo.
+            由于各个手机厂商都修改过手机系统，
          </div>
       </div>
    </div>
@@ -58,18 +68,18 @@
    
    $(function () {
    $(".setbg").mousedown(function () {
-		$(this).css("background", "#99ccff");  
+		$(this).css("background", "rgba(120,186,222,0.7)");  
 		
 	});
 
 	$(".setbg").click(function () { 
 		if($(this).attr("data-selected")==1){
-			$(this).css("background", "red");  
-			$(this).next().css("background", "red");
+			$(this).css("background", "rgba(38,50,56,0.7)");  
+			$(this).next().css("background", "rgba(38,50,56,0.7)");
 			$(this).attr("data-selected",2);
 		}else{
-			$(this).css("background", "yellow");  
-			$(this).next().css("background", "yellow");
+			$(this).css("background", "rgba(88,115,129,0.7)");  
+			$(this).next().css("background", "rgba(88,115,129,0.7)");
 			$(this).attr("data-selected",1);
 		}
 		
