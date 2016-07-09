@@ -140,6 +140,7 @@
 				padding: 0px;
 				margin: 0px;
 				font-size: 13pt;
+				letter-spacing:2px;
 			}
 
 			dl {
@@ -162,12 +163,14 @@
 				font-size: 18pt;
 				cursor: pointer;
 				text-decoration: none;
+				
 			}
 
 			dd,p {
 				color: #e4e4e4;
 				font-size: 16pt;
 				text-indent: 2em;
+				line-height:120%;
 			}
 			
 			a:link,a:visited{
@@ -196,43 +199,48 @@
 	<body>
 	  <dl> 
 	   <dt onclick="javascript:ShowFLT(1,this)" onmousedown="moved(this)" href="javascript:void(null)" data-selected = 1>
-		<a href="javascript:;">如何检索<span>&gt;</span></a>
+		<a href="javascript:;">怎么设置默认桌面<span>&gt;</span></a>
 	   </dt> 
 	   <dd id="LM1" style="DISPLAY: none"> 
-		<p>我们为您提供-HTML+CSS模板，JS代码，网页图标，网页欣赏模板，SEO优化和各种建站技巧； </p> 
+		<p>1.在桌面空白处长按</p>
+		<p>2.点击设置按钮</p>
+		<p>3.点击设置默认桌面</p>
+		<p>4.若界面有"默认选择此项，不再提醒"则勾选此项并点击IS桌面。</p>
+		<p>5.若界面有"始终"和"仅此一次"两个按钮，则先选择IS桌面，再点击"始终"按钮。</p>
+		说明：若按照上面的操作后 IS桌面仍然不是默认桌面，则是由于手机厂商修改手机系统导致的。要设置IS桌面为默认桌面
+		则需要手工设置，一般方法为：设置--应用程序--默认应用--桌面 然后选择 IS桌面。</p>
 	   </dd> 
 
 	   <dt onclick="javascript:ShowFLT(2,this)" onmousedown="moved(this)" href="javascript:void(null)">
-		<a href="javascript:;">如何添加计划<span>&gt;</span></a> 
+		<a href="javascript:;">怎么设置默认屏幕<span>&gt;</span></a> 
 	   </dt> 
 	   <dd id="LM2" style="DISPLAY: none"> 
-		<h5>月度计划的操作</h5> 
-		<p>单击添加计划按钮或工具栏上的添加按钮，弹出添加计划窗体，选择要添加计划的分类，年度、月份后单击确定按钮。</p> 
+		<p>1.在桌面空白处长按</p>
+		<p>2.左右滑动找到要设为主屏幕的屏，点击(这里是个图片) 就把该屏幕设为了默认屏幕</p>
 	   </dd>
   
 	   <dt onclick="javascript:ShowFLT(3,this)" onmousedown="moved(this)" href="javascript:void(null)">
 		<a href="javascript:;">如何添加明细<span>&gt;</span></a>
 	   </dt> 
 	   <dd id="LM3" style="DISPLAY: none"> 
-		<h5>1、月度计划的操作</h5> 
-		<p>在添加完计划，或者单击添加明细按钮后会弹出物资选择窗体，在弹出的物资选择窗体中，选择查选条件后单击查询按钮，会将物资编码库 中的物资信息查询出来，单击物资信息前的勾选框，可将该物资信息添加到已选择物资信息中，若要去掉该物资信息则同样单击物资信息前面 的勾选框即可。在物资选择窗体中可以将服务器物资编码库同步本地数据库物资编码表。</p> 
+		在添加完计划，或者单击添加明细按钮后会弹出物资选择窗体，在弹出的物资选择窗体中，选择查选条件后单击查询按钮，会将物资编码库 中的物资信息查询出来，单击物资信息前的勾选框，可将该物资信息添加到已选择物资信息中，若要去掉该物资信息则同样单击物资信息前面 的勾选框即可。在物资选择窗体中可以将服务器物资编码库同步本地数据库物资编码表。 
 	   </dd> 
 
 	   <dt onclick="javascript:ShowFLT(4,this)" onmousedown="moved(this)" href="javascript:void(null)">
 		<a href="javascript:;">如何删除<span>&gt;</span></a>
 	   </dt> 
 	   <dd id="LM4" style="DISPLAY: none"> 
-		<p>首先指定年度、月份、计划分类，单击检索按钮检索出某年某月的计划信息，在物资信息前有个复选框，可以通过勾选或全选，选中要删除 的物资信息，然后单击删除按钮或工具栏上的删除按钮即可。 </p> 
+		首先指定年度、月份、计划分类，单击检索按钮检索出某年某月的计划信息，在物资信息前有个复选框，可以通过勾选或全选，选中要删除 的物资信息，然后单击删除按钮或工具栏上的删除按钮即可。  
 	   </dd> 
 
 	   <dt onclick="javascript:ShowFLT(5,this)" onmousedown="moved(this)" href="javascript:void(null)">
 		<a href="javascript:;">如何保存<span>&gt;</span></a>
 	   </dt> 
 	   <dd id="LM5" style="DISPLAY: none"> 
-		<p>首先指定年度、月份、计划分类，单击检索按钮检索出某年某月的计划信息，然后在该计划的物资明细列表中直接修改物资信息，如数量、 单价等信息，修改完成后单击保存按钮或者工具栏上的保存按钮即可实现计划的修改。</p> 
+		首先指定年度、月份、计划分类，单击检索按钮检索出某年某月的计划信息，然后在该计划的物资明细列表中直接修改物资信息，如数量、 单价等信息，修改完成后单击保存按钮或者工具栏上的保存按钮即可实现计划的修改。
 	   </dd> 
 	  </dl>
-	  
+	
 	<script type="text/javascript">
 		var number = 5; //定义条目数
 		function LMYC(dom) {
