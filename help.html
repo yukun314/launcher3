@@ -153,7 +153,7 @@
 				background-color:transparent;
 			}
 
-			dt,dt a {
+			dt,dt a{
 				width: 100%;
 				height: auto;
 				display: block;
@@ -163,8 +163,6 @@
 				cursor: pointer;
 				text-decoration: none;
 			}
-
-			
 
 			dd,p {
 				color: #e4e4e4;
@@ -177,15 +175,20 @@
 			}
 			
 			dt{
-				padding:5px;
+				padding:10px;
 				padding-left:1rem;
 				padding-right:1rem;
 			}
 			
 			dd{
-				padding:5px;
+				padding:10px;
 				padding-left:1rem;
 				padding-right:1rem;
+			}
+
+			span{
+			width: 2rem;
+			float:right;
 			}
 		</style>
 	</head>
@@ -193,14 +196,14 @@
 	<body>
 	  <dl> 
 	   <dt onclick="javascript:ShowFLT(1,this)" onmousedown="moved(this)" href="javascript:void(null)" data-selected = 1>
-		<a href="javascript:;">如何检索</a>
+		<a href="javascript:;">如何检索<span>&gt;</span></a>
 	   </dt> 
 	   <dd id="LM1" style="DISPLAY: none"> 
 		<p>我们为您提供-HTML+CSS模板，JS代码，网页图标，网页欣赏模板，SEO优化和各种建站技巧； </p> 
 	   </dd> 
 
 	   <dt onclick="javascript:ShowFLT(2,this)" onmousedown="moved(this)" href="javascript:void(null)">
-		<a href="javascript:;">如何添加计划</a>
+		<a href="javascript:;">如何添加计划</a> 
 	   </dt> 
 	   <dd id="LM2" style="DISPLAY: none"> 
 		<h5>月度计划的操作</h5> 
