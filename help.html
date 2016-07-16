@@ -72,19 +72,20 @@
 	   <dt onclick="javascript:ShowFLT(1,this)" onmousedown="moved(this)" href="javascript:void(null)" data-selected = 1>
 		<a href="javascript:;">怎么设置默认桌面<span>＞</span></a>
 	   </dt> 
-	   <dd id="LM1" style="DISPLAY: "> 
+	   <dd id="LM1" style="DISPLAY: none"> 
 		<p>1.在桌面空白处长按</p>
 		<p>2.点击设置按钮</p>
 		<p>3.点击设置默认桌面</p>
 		<p>4.若界面有"默认选择此项，不再提醒"则勾选此项并点击IS桌面。</p>
 		<p>5.若界面有"始终"和"仅此一次"两个按钮，则先选择IS桌面，再点击"始终"按钮。</p>
-		说明：若按照上面的操作后 IS桌面仍然不是默认桌面，则是由于手机厂商修改手机系统导致的。要设置IS桌面为默认桌面则需要手工设置，一般方法为：设置--应用程序--默认应用--桌面 然后选择 IS桌面。</p>
+		说明：若按照上面的操作后 IS桌面仍然不是默认桌面，则是由于手机厂商修改手机系统导致的。要设置IS桌面为默认桌面
+		则需要手工设置，一般方法为：设置--应用程序--默认应用--桌面 然后选择 IS桌面。</p>
 	   </dd> 
 
 	   <dt onclick="javascript:ShowFLT(2,this)" onmousedown="moved(this)" href="javascript:void(null)">
 		<a href="javascript:;">怎么设置默认屏幕<span>＞</span></a> 
 	   </dt> 
-	   <dd id="LM2" style="DISPLAY: "> 
+	   <dd id="LM2" style="DISPLAY: none"> 
 		<p>1.在桌面空白处长按</p>
 		<p>2.左右滑动找到要设为主屏幕的屏，点击<img width = "40" src="images/home_button.jpg"> 就把该屏幕设为了默认屏幕</p>
 	   </dd>
@@ -120,6 +121,8 @@
 				lbmc.style.display = 'none';
 				
 			}
+			$(dom).siblings().css("background", "transparent");
+			$("dt").find("span").html("＞");
 		}
 		function moved(dom){
 			dom.style.background ="rgba(120,186,222,0.5)";
@@ -131,10 +134,13 @@
 				lbmc.style.display = '';
 				lbmc.style.background ="rgba(88,115,129,0.5)";
 				dom.style.background ="rgba(88,115,129,0.5)";
+				$(dom).find("span").html("∨");
 			} else {
 				lbmc.style.display = 'none';
 			}
 		} 
+		
+
 	</script>
 
 	</body>
