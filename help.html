@@ -1,132 +1,3 @@
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-   <title>帮助</title>
-   <meta charset="UTF-8">
-   <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
-   <script src="stylesheets/jquery.min.js"></script>
-   <script src="stylesheets/bootstrap.min.js"></script>
-   <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-   <style>
-		.body_bg{
-			background-color:rgba(0,0,0,0);
-		}
-		.panel_title_color{
-			background-color:rgba(55,66,77,0.7);
-		}
-		.panel_title_text{
-			padding:20px 20px 20px 20px;
-			color:#FFFFFF;
-			font-size:22px;
-		}
-		a:link,a:visited{
-			text-decoration:none;  /*超链接无下划线*/
-			color:#FFFFFF;
-			font-size:18px;
-		}
-		.text_color{
-			color:#FFFFFF;
-		}
-		.text_color:visited{
-			color:#FFFFFF;
-		}
-		.text_color:hover{
-			color:#FFFFFF;
-		}
-		.setbg{
-			padding:20px 20px 20px 20px;
-			color:#FFFFFF;
-			background-color:rgba(38,50,56,0.5);
-		}
-		.collapseitem{
-			padding:22px 5px 5px 5px;
-			color:#FFFFFF;
-			background-color:rgba(38,50,56,0.5);
-		}
-   </style>
-</head>
-<body class="body_bg">
-
-<div class="panel_title_color">
-	<div class="panel_title_text">
-		常见问题
-	</div>
-</div>
-<div class="panel-group" id="accordion">
-   
-      <div class="setbg" data-selected=1>
-         <h4 class="panel-title">
-            <a class="text_color" data-toggle="collapse" data-parent="#accordion" 
-               href="#collapse1" >
-               设置默认桌面不能成功问题？
-            </a>
-         </h4>
-      </div>
-      <div id="collapse1" class="collapseitem">
-         <div class="panel-body">
-            由于各个手机厂商都修改过手机系统，
-         </div>
-      </div>
-   </div>
-  
-		<a class="text_color" data-toggle="collapse" data-parent="#accordion" 
-		   href="#collapse1" >
-		   设置默认桌面不能成功问题？
-		</a>
-      <div id="collapse1" class="collapseitem">
-         <div class="panel-body">
-            由于各个手机厂商都修改过手机系统，
-         </div>
-      </div>
-   </div>
-  
-</div>
-<script type="text/javascript">
-   $(function () {
-	   $('#collapse1').collapse({
-		  toggle: false
-	   })
-   });
-   
-   $(function () { $('#collapse2').collapse({
-      toggle: false
-   })});
-   $(function () { $('#collapse3').collapse({
-      toggle: false
-   })});
-   $(function () { $('#collapse4').collapse({
-      toggle: false
-   })});
-   
-   
-   $(function () {
-   $(".setbg").mousedown(function () {
-		$(this).css("background", "rgba(120,186,222,0.5)");  
-		
-	});
-
-	$(".setbg").click(function () { 
-		if($(this).attr("data-selected")==2){
-			$(this).css("background", "rgba(38,50,56,0.5)");  
-			$(this).next().css("background", "rgba(38,50,56,0.5)");
-			$(this).attr("data-selected",1);
-		}else{
-			$(this).css("background", "rgba(88,115,129,0.5)");  
-			$(this).next().css("background", "rgba(88,115,129,0.5)");
-			$(this).attr("data-selected",2);
-		}
-		
-	});
-	
-});
- 
-</script>  
-
-</body>
-</html>
-
- -->
  <!DOCTYPE html>
  <html>
 	<head>
@@ -250,8 +121,6 @@
 				lbmc.style.display = 'none';
 				
 			}
-			$(dom).siblings().css("background", "transparent");
-			$("dt").find("span").html("＞");
 		}
 		function moved(dom){
 			dom.style.background ="rgba(120,186,222,0.5)";
@@ -263,7 +132,6 @@
 				lbmc.style.display = '';
 				lbmc.style.background ="rgba(88,115,129,0.5)";
 				dom.style.background ="rgba(88,115,129,0.5)";
-				$(dom).find("span").html("∨");
 			} else {
 				lbmc.style.display = 'none';
 			}
