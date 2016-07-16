@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html>
 	<head>
 		<title>帮助</title>
@@ -121,6 +121,8 @@
 				lbmc.style.display = 'none';
 				
 			}
+			$(dom).siblings().css("background", "transparent");
+			$("dt").find("span").html("＞");
 		}
 		function moved(dom){
 			dom.style.background ="rgba(120,186,222,0.5)";
@@ -132,13 +134,12 @@
 				lbmc.style.display = '';
 				lbmc.style.background ="rgba(88,115,129,0.5)";
 				dom.style.background ="rgba(88,115,129,0.5)";
+				$(dom).find("span").html("∨");
 			} else {
 				lbmc.style.display = 'none';
 			}
 		} 
-		
-
 	</script>
 
 	</body>
-</html
+</html>
