@@ -1,0 +1,14 @@
+[
+   {
+      "name":"help.html",
+      "url" :"help.html"
+	},
+   {
+      "name":"home_button.jpg",
+      "url" :"images/home_button.jpg"
+   },
+   {
+      "name":"jquery.min.js",
+      "url" :"stylesheets/jquery.min.js"
+   }
+]
