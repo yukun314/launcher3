@@ -69,7 +69,7 @@
 
 	<body>
 	  <dl> 
-	   <dt onclick="javascript:ShowFLT(1,this)" onmousedown="moved(this)" href="javascript:void(null)" data-selected = 1>
+	   <dt id="defaultOpen" onclick="javascript:ShowFLT(1,this)" onmousedown="moved(this)" href="javascript:void(null)" data-selected = 1>
 		<a href="javascript:;">怎么设置默认桌面<span>＞</span></a>
 	   </dt> 
 	   <dd id="LM1" style="DISPLAY: none"> 
@@ -90,30 +90,11 @@
 		<p>2.左右滑动找到要设为主屏幕的屏，点击<img width = "40" src="images/home_button.jpg"> 就把该屏幕设为了默认屏幕</p>
 	   </dd>
   
-	   <dt onclick="javascript:ShowFLT(3,this)" onmousedown="moved(this)" href="javascript:void(null)">
-		<a href="javascript:;">如何添加明细<span>＞</span></a>
-	   </dt> 
-	   <dd id="LM3" style="DISPLAY: none"> 
-		在添加完计划，或者单击添加明细按钮后会弹出物资选择窗体，在弹出的物资选择窗体中，选择查选条件后单击查询按钮，会将物资编码库 中的物资信息查询出来，单击物资信息前的勾选框，可将该物资信息添加到已选择物资信息中，若要去掉该物资信息则同样单击物资信息前面 的勾选框即可。在物资选择窗体中可以将服务器物资编码库同步本地数据库物资编码表。 
-	   </dd> 
-
-	   <dt onclick="javascript:ShowFLT(4,this)" onmousedown="moved(this)" href="javascript:void(null)">
-		<a href="javascript:;">如何删除<span>＞</span></a>
-	   </dt> 
-	   <dd id="LM4" style="DISPLAY: none"> 
-		首先指定年度、月份、计划分类，单击检索按钮检索出某年某月的计划信息，在物资信息前有个复选框，可以通过勾选或全选，选中要删除的物资信息，然后单击删除按钮或工具栏上的删除按钮即可。  
-	   </dd> 
-
-	   <dt onclick="javascript:ShowFLT(5,this)" onmousedown="moved(this)" href="javascript:void(null)">
-		<a href="javascript:;">如何保存<span>＞</span></a>
-	   </dt> 
-	   <dd id="LM5" style="DISPLAY: none"> 
-		首先指定年度、月份、计划分类，单击检索按钮检索出某年某月的计划信息，然后在该计划的物资明细列表中直接修改物资信息，如数量、 单价等信息，修改完成后单击保存按钮或者工具栏上的保存按钮即可实现计划的修改。
-	   </dd> 
+	   
 	  </dl>
 	
 	<script type="text/javascript">
-		var number = 5; //定义条目数
+		var number = 2; //定义条目数
 		function LMYC(dom) {
 			var lbmc;
 			for (i = 1; i <= number; i++) {
@@ -137,9 +118,21 @@
 				$(dom).find("span").html("∨");
 			} else {
 				lbmc.style.display = 'none';
+				$(dom).find("span").html("＞");
 			}
 		} 
 		
+		window.onload=function(){
+			lbmc = eval("defaultOpen");
+			lbmc.click();
+		} 
+
+		//jquery的写法
+		//$(window).load(function(){
+			//要执行的方法体
+			//document.getElementById("defaultOpen").click(1,this);
+		//});
+
 
 	</script>
 
