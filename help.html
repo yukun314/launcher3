@@ -90,11 +90,20 @@
 		<p>2.左右滑动找到要设为主屏幕的屏，点击<img width = "40" src="images/home_button.png"> 就把该屏幕设为了默认屏幕</p>
 	   </dd>
   
+		<dt onclick="javascript:ShowFLT(3,this)" onmousedown="moved(this)" href="javascript:void(null)">
+		<a href="javascript:;">文件夹及相关操作<span>＞</span></a> 
+	   </dt> 
+	   <dd id="LM3" style="DISPLAY: none"> 
+		<p>1.新建文件夹:在桌面上长按一个应用图标并拖动到另一个应用图标上，当显示为文件夹样式时松开即可。</p>
+		<p>2.重命名文件夹:打开(点击)桌面上的文件夹,点击文件夹名(或未命名文件夹)即可重命名。</p>
+		<p>3.把应用添加到文件夹:长按应用图标并拖动到文件夹上</p>
+		<p>4.把应用移出文件夹:打开文件夹，长按应用图标并拖动到文件夹的外部</p>
+	   </dd>
 	   
 	  </dl>
 	
 	<script type="text/javascript">
-		var number = 2; //定义条目数
+		var number = 3; //定义条目数
 		function LMYC(dom) {
 			var lbmc;
 			for (i = 1; i <= number; i++) {
